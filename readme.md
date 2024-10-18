@@ -11,3 +11,4 @@ Also currently starting their [AWS tutorial](https://developer.hashicorp.com/ter
 * `terraform show list` shows all existing (and running) provisions created by this `main.tf` file
 * `.terraform.lock.hcl` is a file that is created whenever `terraform init` is run, and is a dependency file that acts kind of like a `package-lock.json` would for a Node/JavaScript project
 * Since Terraform loads all `.tf` files at `apply` time, creating a file like `variables.tf` allows you to be more flexible with what you call your stuff, and `outputs.tf` makes it easier to debug by surfacing values in the terminal.
+* You can manage your workspaces remotely using HCP Terraform (the cloud platform that can host your configs and your environment variables)
