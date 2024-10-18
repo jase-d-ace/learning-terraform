@@ -1,4 +1,12 @@
 terraform {
+  
+  cloud {
+    organization = "jases-terraforming-business"
+
+    workspaces {
+      name = "jases-terraforming-and-landscaping"
+    }
+  }
   required_providers {
     aws = {
       source  = "hashicorp/aws"
